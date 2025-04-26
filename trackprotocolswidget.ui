@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>trackprotocolswidget</class>
+ <widget class="QWidget" name="trackprotocolswidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1202</width>
+    <height>628</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #e6f0fa; /* Fond bleu très clair */
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+}
+</string>
+  </property>
+  <widget class="QLabel" name="titleLabel">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>50</y>
+     <width>211</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/* Main title */
+QLabel#titleLabel {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1F3C88;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, 
+                              stop:0 rgba(255,255,255,0.9), 
+                              stop:1 rgba(245,249,255,0.8));
+    border-bottom: 2px solid #2A5D9F;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Tack Protocols</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>120</y>
+     <width>521</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>60</y>
+      <width>401</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="protocolNameLabel">
+       <property name="styleSheet">
+        <string notr="true">QLabel#protocolNameLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #113f7c; /* Bleu profond */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Protocol Name :</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="protocolNameLineEdit">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit{
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 13px;
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="trackButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton#trackButton {
+	background-color: #2a5d9f;
+    padding: 8px 16px;
+    border-radius: 6px;
+	font-size: 18px;
+    font-weight: bold;
+    color: white 
+}
+
+QPushButton#trackButton:hover {
+    background-color: #1f497d;
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>Track</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QDateEdit" name="lastUpdateDateEdit">
+       <property name="styleSheet">
+        <string notr="true">QDateEdit{
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 13px;
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="backButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton#backButton {
+	background-color: #2a5d9f;
+    padding: 8px 16px;
+    border-radius: 6px;
+	font-size: 18px;
+    font-weight: bold;
+    color: white 
+}
+
+QPushButton#backButton:hover {
+    background-color: #1f497d;
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>Back</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="lastUpdateLabel">
+       <property name="styleSheet">
+        <string notr="true">QLabel#lastUpdateLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #113f7c; /* Bleu profond */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Last Updated :</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="addButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton#addButton {
+	background-color: #2a5d9f;
+    padding: 8px 16px;
+    border-radius: 6px;
+	font-size: 18px;
+    font-weight: bold;
+    color: white 
+}
+
+QPushButton#addButton:hover {
+    background-color: #1f497d;
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>Add</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="clearButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton#clearButton {
+	background-color: #2a5d9f;
+    padding: 8px 16px;
+    border-radius: 6px;
+	font-size: 18px;
+    font-weight: bold;
+    color: white 
+}
+
+QPushButton#clearButton:hover {
+    background-color: #1f497d;
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>Clear</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #607D8B
+}</string>
+    </property>
+    <property name="text">
+     <string>Track a Protocol</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

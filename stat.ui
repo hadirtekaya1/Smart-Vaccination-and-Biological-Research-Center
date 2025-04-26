@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Stat</class>
+ <widget class="QWidget" name="Stat">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1178</width>
+    <height>734</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>856</width>
+    <height>510</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#Stat {
+    background-color: #e6f0fa;
+}
+
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QWidget" name="chartSuccessRate" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#chartSuccessRate {
+    background-color: white;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px;
+}
+
+QLabel {
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    color: #2d3e50;
+    qproperty-alignment: AlignCenter;
+}
+</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QLabel" name="labelSuccessRate">
+        <property name="styleSheet">
+         <string notr="true">QLabel#labelSuccessRate{
+    font-size: 18px;
+    font-weight: bold;
+    color: #113f7c; /* Bleu profond */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Success Rate Placeholder</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="chartAvgDuration" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#chartAvgDuration {
+    background-color: white;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px;
+}
+
+QLabel {
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    color: #2d3e50;
+    qproperty-alignment: AlignCenter;
+}
+</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
+       <widget class="QLabel" name="labelAvgDuration">
+        <property name="styleSheet">
+         <string notr="true">QLabel#labelAvgDuration {
+    font-size: 18px;
+    font-weight: bold;
+    color: #113f7c; /* Bleu profond */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Average Duration Placeholder</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="chartComparison" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#chartComparison {
+    background-color: white;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px;
+}
+
+QLabel {
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    color: #2d3e50;
+    qproperty-alignment: AlignCenter;
+}
+</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QLabel" name="labelComparison">
+        <property name="styleSheet">
+         <string notr="true">QLabel#labelComparison {
+    font-size: 18px;
+    font-weight: bold;
+    color: #113f7c; /* Bleu profond */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Comparison Placeholder</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="backButton">
+        <property name="styleSheet">
+         <string notr="true">QPushButton#backButton {
+	background-color: #113f7c; 
+    padding: 8px 16px;
+    border-radius: 6px;
+	font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+QPushButton#backButton:hover {
+    background-color: #0e3262;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,1297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1454</width>
+    <height>704</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #e6f0fa; /* Fond bleu très clair */
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+    background-color: #e6f0fa; /* Fond bleu très clair */
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+}
+
+</string>
+   </property>
+   <widget class="QLabel" name="mainTitle">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>0</y>
+      <width>801</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* Main title */
+QLabel#mainTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1F3C88;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, 
+                              stop:0 rgba(255,255,255,0.9), 
+                              stop:1 rgba(245,249,255,0.8));
+    border-bottom: 2px solid #2A5D9F;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+}</string>
+    </property>
+    <property name="text">
+     <string> 🔬  SMART VACCINATION AND BIOLOGICAL RESEARCH CENTER</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imageLabel">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>30</y>
+      <width>63</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>100</y>
+      <width>1131</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabWidget::pane {
+    border: 1px solid #113f7c;
+    border-radius: 3px;
+}
+
+QTabBar::tab {
+    background: #f0f0f0;
+    color: #113f7c;
+    padding: 8px 12px;
+    border: 1px solid #113f7c;
+    border-bottom: none;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+QTabBar::tab:selected {
+    background: #113f7c;
+    color: white;
+    font-weight: bold;
+	font-size: 18px;
+}
+
+QTabBar::tab:hover {
+    background: #d0e0f0;
+}</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>create experiment</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>561</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+    font-size: 18px;
+    font-weight: bold;
+    color: #607D8B;
+    border: 1px solid #B0BEC5;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding-top: 25px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 5px;
+    left: 10px;
+}</string>
+      </property>
+      <property name="title">
+       <string>🔬  EXPERIMENT DASHBOARD</string>
+      </property>
+      <widget class="QWidget" name="horizontalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>40</y>
+         <width>341</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="experimentIdLabel">
+          <property name="styleSheet">
+           <string notr="true">QLabel#experimentIdLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #113f7c; /* Bleu profond */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Experiment ID :</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="experimentIdLineEdit">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    border: 1px solid #1F3C88;
+    border-radius: 4px;
+    padding: 6px;
+    background: #F5F9FF;
+}</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>10</y>
+        <width>511</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+    font-size: 18px;
+    font-weight: bold;
+    color: #607D8B;
+    border: 1px solid #B0BEC5;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding-top: 25px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 5px;
+    left: 10px;
+}</string>
+      </property>
+      <property name="title">
+       <string>📋  BASIC INFO</string>
+      </property>
+      <widget class="QWidget" name="gridLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>40</y>
+         <width>331</width>
+         <height>247</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="responsibleNameLineEdit">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    border: 1px solid #1F3C88;
+    border-radius: 4px;
+    padding: 6px;
+    background: #F5F9FF;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QDateEdit" name="startDateLineEdit">
+          <property name="styleSheet">
+           <string notr="true">QDateEdit {
+    border: 1px solid #1F3C88;
+    border-radius: 4px;
+    padding: 6px;
+    background: #F5F9FF;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="experimentNameLabel">
+          <property name="styleSheet">
+           <string notr="true">QLabel#experimentNameLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #113f7c; /* Bleu profond */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Experiment Name :</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="responsibleNameLabel">
+          <property name="styleSheet">
+           <string notr="true">QLabel#responsibleNameLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #113f7c; /* Bleu profond */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Responsible Name :</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="statusLabel">
+          <property name="styleSheet">
+           <string notr="true">QLabel#statusLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #113f7c; /* Bleu profond */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Status :</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QDateEdit" name="endDateLineEdit">
+          <property name="styleSheet">
+           <string notr="true">QDateEdit {
+    border: 1px solid #1F3C88;
+    border-radius: 4px;
+    padding: 6px;
+    background: #F5F9FF;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="experimentNameLineEdit">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    border: 1px solid #1F3C88;
+    border-radius: 4px;
+    padding: 6px;
+    background: #F5F9FF;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="startDateLabel">
+          <property name="styleSheet">
+           <string notr="true">QLabel#startDateLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #113f7c; /* Bleu profond */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Start Date :</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="endDateLabel">
+          <property name="styleSheet">
+           <string notr="true">QLabel#endDateLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #113f7c; /* Bleu profond */
+}
+
+</string>
+          </property>
+          <property name="text">
+           <string>End Date :</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QComboBox" name="statusComboBox">
+          <property name="styleSheet">
+           <string notr="true">QComboBox {
+    border: 1px solid #1F3C88;
+    border-radius: 4px;
+    padding: 6px;
+    background: #F5F9FF;
+}</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>In Progress</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Reported</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Analyzed</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Planned</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Completed</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="resultsObtainedLabel">
+          <property name="styleSheet">
+           <string notr="true">QLabel#resultsObtainedLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #113f7c; /* Bleu profond */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Results Obtained :</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLineEdit" name="resultsObtainedLineEdit">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    border: 1px solid #1F3C88;
+    border-radius: 4px;
+    padding: 6px;
+    background: #F5F9FF;
+}
+</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="addButton">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>300</y>
+         <width>191</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#addButton {
+	background-color: #113f7c; 
+    padding: 8px 16px;
+    border-radius: 6px;
+	font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+QPushButton#addButton:hover {
+    background-color: #0e3262;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>✏️ Add</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>561</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+    font-size: 18px;
+    font-weight: bold;
+    color: #607D8B;
+    border: 1px solid #B0BEC5;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding-top: 25px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 5px;
+    left: 10px;
+}</string>
+      </property>
+      <property name="title">
+       <string>📝  DEATAILS</string>
+      </property>
+      <widget class="QWidget" name="gridLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>60</y>
+         <width>341</width>
+         <height>124</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="protocolLineEdit">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    border: 1px solid #1F3C88;
+    border-radius: 4px;
+    padding: 6px;
+    background: #F5F9FF;
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="protocolLabel">
+          <property name="styleSheet">
+           <string notr="true">QLabel#protocolLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #113f7c; /* Bleu profond */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Protocol :</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="descriptionLineEdit">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    border: 1px solid #1F3C88;
+    border-radius: 4px;
+    padding: 6px;
+    background: #F5F9FF;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="descriptionLabel">
+          <property name="styleSheet">
+           <string notr="true">QLabel#descriptionLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #113f7c; /* Bleu profond */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Description :</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>read experiments</string>
+     </attribute>
+     <widget class="QTableView" name="tableView">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>1041</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Style pour la table entière */
+QTableWidget {
+    border: 1px solid #113f7c;
+    border-radius: 3px;
+    gridline-color: #c0c0c0;
+    font-family: &quot;Segoe UI&quot;;
+    font-size: 13px;
+}
+
+/* Style pour l'en-tête des colonnes */
+QHeaderView::section {
+    background-color: #113f7c;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* Style pour les cellules de la table */
+QTableWidget QTableCornerButton::section {
+    background: #113f7c;
+    border: none;
+}
+
+QTableView::item {
+    padding: 6px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Style pour les cellules sélectionnées */
+QTableView::item:selected {
+    background-color: #113f7c;
+    color: white;
+}
+
+/* Style au survol */
+QTableView::item:hover {
+    background-color: #d0e0f0;
+}
+
+/* Style alterné pour les lignes */
+QTableView::item:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+QTableView::item:nth-child(odd) {
+    background-color: white;
+}</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Delete Experiment</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>50</y>
+        <width>741</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+    font-size: 18px;
+    font-weight: bold;
+    color: #607D8B;
+    border: 1px solid #B0BEC5;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding-top: 25px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 5px;
+    left: 10px;
+}</string>
+      </property>
+      <property name="title">
+       <string>Delete Experiment</string>
+      </property>
+      <widget class="QWidget" name="gridLayoutWidget_4">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>40</y>
+         <width>441</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="styleSheet">
+           <string notr="true">QLabel#label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #113f7c; /* Bleu profond */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Experiment ID :</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="experimentIdRemovedLineEdit">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    border: 1px solid #1F3C88;
+    border-radius: 4px;
+    padding: 6px;
+    background: #F5F9FF;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QPushButton" name="deleteButton">
+          <property name="styleSheet">
+           <string notr="true">QPushButton#deleteButton {
+	background-color: #113f7c; /* couleur principale mise à jour */
+    padding: 8px 16px;
+    border-radius: 6px;
+	font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+QPushButton#deleteButton:hover {
+    background-color: #0e3262; /* une nuance plus foncée pour le hover */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>🗑️ Delete</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Update Experiment</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>10</y>
+        <width>521</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+    font-size: 18px;
+    font-weight: bold;
+    color: #607D8B;
+    border: 1px solid #B0BEC5;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding-top: 25px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 5px;
+    left: 10px;
+}</string>
+      </property>
+      <property name="title">
+       <string>🔬  EXPERIMENT DASHBOARD</string>
+      </property>
+      <widget class="QWidget" name="horizontalLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>50</y>
+         <width>351</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="experimentIdUpdatedLabel">
+          <property name="styleSheet">
+           <string notr="true">QLabel#experimentIdUpdatedLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #113f7c; /* Bleu profond */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Experiment ID :</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="experimentIdUpdatedLineEdit">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    border: 1px solid #1F3C88;
+    border-radius: 4px;
+    padding: 6px;
+    background: #F5F9FF;
+}</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>180</y>
+        <width>521</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+    font-size: 18px;
+    font-weight: bold;
+    color: #607D8B;
+    border: 1px solid #B0BEC5;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding-top: 25px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 5px;
+    left: 10px;
+}</string>
+      </property>
+      <property name="title">
+       <string>📝  DEATAILS</string>
+      </property>
+      <widget class="QWidget" name="gridLayoutWidget_5">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>60</y>
+         <width>351</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="2" column="0">
+         <widget class="QLabel" name="protocolUpdatedLabel">
+          <property name="styleSheet">
+           <string notr="true">QLabel#protocolUpdatedLabel{
+    font-size: 18px;
+    font-weight: bold;
+    color: #113f7c; /* Bleu profond */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Protocol :</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="descriptionUpdatedLabel">
+          <property name="styleSheet">
+           <string notr="true">QLabel#descriptionUpdatedLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #113f7c; /* Bleu profond */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Description :</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="descriptionUpdatedLineEdit">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    border: 1px solid #1F3C88;
+    border-radius: 4px;
+    padding: 6px;
+    background: #F5F9FF;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="protocolUpdatedLineEdit">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    border: 1px solid #1F3C88;
+    border-radius: 4px;
+    padding: 6px;
+    background: #F5F9FF;
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_8">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>10</y>
+        <width>421</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+    font-size: 18px;
+    font-weight: bold;
+    color: #607D8B;
+    border: 1px solid #B0BEC5;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding-top: 25px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 5px;
+    left: 10px;
+}</string>
+      </property>
+      <property name="title">
+       <string>📋  BASIC INFO</string>
+      </property>
+      <widget class="QWidget" name="gridLayoutWidget_6">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>30</y>
+         <width>331</width>
+         <height>278</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="2" column="0">
+         <widget class="QLabel" name="statusUpdatedLabel">
+          <property name="styleSheet">
+           <string notr="true">QLabel#statusUpdatedLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #113f7c; /* Bleu profond */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Status :</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QComboBox" name="statusUpdtaedComboBox">
+          <property name="styleSheet">
+           <string notr="true">QComboBox {
+    border: 1px solid #1F3C88;
+    border-radius: 4px;
+    padding: 6px;
+    background: #F5F9FF;
+}</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>In Progress</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Reported</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Analyzed</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Planned</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Completed</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="resultsObtainedUpdatedLabel">
+          <property name="styleSheet">
+           <string notr="true">QLabel#resultsObtainedUpdatedLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #113f7c; /* Bleu profond */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Results Obtained :</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="experimentNameUpdatedLabel">
+          <property name="styleSheet">
+           <string notr="true">QLabel#experimentNameUpdatedLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #113f7c; /* Bleu profond */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Experiment Name :</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="responsibleNameUpdatedLabel">
+          <property name="styleSheet">
+           <string notr="true">QLabel#responsibleNameUpdatedLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #113f7c; /* Bleu profond */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Responsible Name :</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QDateEdit" name="startDateUpdatedLineEdit">
+          <property name="styleSheet">
+           <string notr="true">QDateEdit {
+    border: 1px solid #1F3C88;
+    border-radius: 4px;
+    padding: 6px;
+    background: #F5F9FF;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="startDateUpdatedLabel">
+          <property name="styleSheet">
+           <string notr="true">QLabel#startDateUpdatedLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #113f7c; /* Bleu profond */
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Start Date :</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="endDateUpdatedLabel">
+          <property name="styleSheet">
+           <string notr="true">QLabel#endDateUpdatedLabel{
+    font-size: 18px;
+    font-weight: bold;
+    color: #113f7c; /* Bleu profond */
+}
+
+</string>
+          </property>
+          <property name="text">
+           <string>End Date :</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="experimentNameUpdtaedLineEdit">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    border: 1px solid #1F3C88;
+    border-radius: 4px;
+    padding: 6px;
+    background: #F5F9FF;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QDateEdit" name="endDateUpdatedLineEdit">
+          <property name="styleSheet">
+           <string notr="true">QDateEdit {
+    border: 1px solid #1F3C88;
+    border-radius: 4px;
+    padding: 6px;
+    background: #F5F9FF;
+}</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QLineEdit" name="resultsObtainedUpdatedLineEdit">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    border: 1px solid #1F3C88;
+    border-radius: 4px;
+    padding: 6px;
+    background: #F5F9FF;
+}
+</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QLineEdit" name="responsibleNameUpdatedLineEdit">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    border: 1px solid #1F3C88;
+    border-radius: 4px;
+    padding: 6px;
+    background: #F5F9FF;
+}</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="updateButton">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>320</y>
+         <width>181</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#updateButton {
+	background-color: #113f7c; 
+    padding: 8px 16px;
+    border-radius: 6px;
+	font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+QPushButton#updateButton:hover {
+    background-color: #0e3262;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>🔄 Update</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_5">
+     <attribute name="title">
+      <string>Actions</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>30</y>
+        <width>901</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+    font-size: 18px;
+    font-weight: bold;
+    color: #607D8B;
+    border: 1px solid #B0BEC5;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding-top: 25px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 5px;
+    left: 10px;
+}</string>
+      </property>
+      <property name="title">
+       <string>🛠️  ACTIONS</string>
+      </property>
+      <widget class="QWidget" name="gridLayoutWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>70</y>
+         <width>701</width>
+         <height>136</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="1" column="0">
+         <widget class="QPushButton" name="resultsHistoryButton">
+          <property name="styleSheet">
+           <string notr="true">QPushButton#resultsHistoryButton{
+    background-color: #2a5d9f;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+	font-size: 18px;
+    font-weight: bold;
+}
+
+QPushButton#resultsHistoryButton:hover {
+    background-color: #1f497d;
+}
+</string>
+          </property>
+          <property name="text">
+           <string>🔍 Results History</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="labConsumablesOptimizerButton">
+          <property name="styleSheet">
+           <string notr="true">QPushButton#labConsumablesOptimizerButton {
+	background-color: #2a5d9f;
+    padding: 8px 16px;
+    border-radius: 6px;
+	font-size: 18px;
+    font-weight: bold;
+    color: white 
+}
+
+QPushButton#labConsumablesOptimizerButton:hover {
+    background-color: #1f497d;
+}</string>
+          </property>
+          <property name="text">
+           <string>🧪 Lab Consumables Optimizer</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="statButton">
+          <property name="styleSheet">
+           <string notr="true">QPushButton#statButton{
+    background-color: #2a5d9f;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+	font-size: 18px;
+    font-weight: bold;
+}
+
+QPushButton#statButton:hover {
+    background-color: #1f497d;
+}
+</string>
+          </property>
+          <property name="text">
+           <string>⚙️Stat</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="statisticsButton">
+          <property name="styleSheet">
+           <string notr="true">QPushButton#statisticsButton {
+    background-color: #2a5d9f;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+	font-size: 18px;
+    font-weight: bold;
+}
+
+QPushButton#statisticsButton:hover {
+    background-color: #1f497d;
+}
+</string>
+          </property>
+          <property name="text">
+           <string>📊Statistics</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1454</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
