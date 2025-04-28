@@ -2,7 +2,6 @@
 #include "experiments.h"
 #include "ui_mainwindow.h"
 #include "resultshistory.h"
-#include "statistics.h"
 #include "stat.h"
 #include "labconsumablesoptimizer.h"
 #include <QMessageBox>
@@ -184,21 +183,6 @@ void MainWindow::on_labConsumablesOptimizerButton_clicked()
     optimizerWindow ->show();
 
 }
-
-
-void MainWindow::on_statisticsButton_clicked()
-{
-    this->hide();
-    Statistics *statisticsWindow = new Statistics (nullptr); // No parent
-    statisticsWindow->setWindowFlags(Qt::Window);
-    connect(statisticsWindow, &Statistics::backRequested, this, &MainWindow::show);
-    statisticsWindow ->show();
-
-}
-
-
-
-
 
 void MainWindow::on_statButton_clicked()
 {

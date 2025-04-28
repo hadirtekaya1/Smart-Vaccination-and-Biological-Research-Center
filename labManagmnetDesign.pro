@@ -20,8 +20,7 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     resultshistory.cpp \
-    stat.cpp \
-    statistics.cpp
+    stat.cpp
 
 HEADERS += \
     connection.h \
@@ -29,14 +28,12 @@ HEADERS += \
     labconsumablesoptimizer.h \
     mainwindow.h \
     resultshistory.h \
-    stat.h \
-    statistics.h
+    stat.h
 
 FORMS += mainwindow.ui \
     labconsumablesoptimizer.ui \
     resultshistory.ui \
-    stat.ui \
-    statistics.ui
+    stat.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

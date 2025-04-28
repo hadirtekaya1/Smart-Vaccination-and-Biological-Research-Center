@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1178</width>
-    <height>734</height>
+    <width>1254</width>
+    <height>798</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -135,10 +135,13 @@ QLabel {
         </property>
        </widget>
       </item>
-      <item>
-       <widget class="QPushButton" name="backButton">
-        <property name="styleSheet">
-         <string notr="true">QPushButton#backButton {
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="backButton">
+     <property name="styleSheet">
+      <string notr="true">QPushButton#backButton {
 	background-color: #113f7c; 
     padding: 8px 16px;
     border-radius: 6px;
@@ -151,13 +154,10 @@ QPushButton#backButton:hover {
     background-color: #0e3262;
 }
 </string>
-        </property>
-        <property name="text">
-         <string>Back</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     </property>
+     <property name="text">
+      <string>Back</string>
+     </property>
     </widget>
    </item>
   </layout>
