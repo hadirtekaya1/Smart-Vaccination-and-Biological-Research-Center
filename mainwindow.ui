@@ -108,7 +108,7 @@ QTabBar::tab:hover {
 }</string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>4</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -1230,7 +1230,7 @@ QPushButton#labConsumablesOptimizerButton:hover {
           </property>
          </widget>
         </item>
-        <item row="1" column="1">
+        <item row="2" column="0">
          <widget class="QPushButton" name="statButton">
           <property name="styleSheet">
            <string notr="true">QPushButton#statButton{
@@ -1243,28 +1243,6 @@ QPushButton#labConsumablesOptimizerButton:hover {
 }
 
 QPushButton#statButton:hover {
-    background-color: #1f497d;
-}
-</string>
-          </property>
-          <property name="text">
-           <string>⚙️Stat</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="1">
-         <widget class="QPushButton" name="statisticsButton">
-          <property name="styleSheet">
-           <string notr="true">QPushButton#statisticsButton {
-    background-color: #2a5d9f;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 6px;
-	font-size: 18px;
-    font-weight: bold;
-}
-
-QPushButton#statisticsButton:hover {
     background-color: #1f497d;
 }
 </string>
