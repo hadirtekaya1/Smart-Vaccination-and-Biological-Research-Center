@@ -35,10 +35,10 @@ ResultsHistory::ResultsHistory(QWidget *parent)
     // Connect signals
     connect(ui->backButton, &QPushButton::clicked,
             this, &ResultsHistory::backRequested);
-    connect(ui->exportPDFButton, &QPushButton::clicked,
+   /*connect(ui->exportPDFButton, &QPushButton::clicked,
             this, &ResultsHistory::on_exportPDFButton_clicked);
     connect(ui->viewDetailsButton, &QPushButton::clicked,
-            this, &ResultsHistory::on_viewDetailsButton_clicked);
+            this, &ResultsHistory::on_viewDetailsButton_clicked);*/
     connect(ui->comboBoxResponsible, &QComboBox::currentTextChanged,
             this, &ResultsHistory::applyFilters);
     connect(ui->dateEditFilter, &QDateEdit::dateChanged,

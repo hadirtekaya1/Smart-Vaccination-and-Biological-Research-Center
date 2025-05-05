@@ -8,6 +8,8 @@
 #include <QtCharts/QBarSet>
 #include <QtCharts/QBarCategoryAxis>
 #include <QtCharts/QValueAxis>
+#include <QSqlQuery>
+#include <QSqlError>
 
 namespace Ui {
 class Stat;
@@ -21,7 +23,6 @@ public:
     explicit Stat(QWidget *parent = nullptr);
     ~Stat();
 
-
 signals:
     void backRequested();
 
@@ -31,9 +32,12 @@ private slots:
 private:
     Ui::Stat *ui;
 
-    void setupSuccessRateChart();
-    void setupAvgDurationChart();
-    void setupComparisonChart();
+    void fetchSuccessRateData();
+    void fetchAvgDurationData();
+    void fetchComparisonData();
+    void setupSuccessRateChart(int successCount, int failureCount);
+    void setupAvgDurationChart(double avgDuration);
+    void setupComparisonChart(const QList<QString>& responsibles, const QList<int>& successCounts, const QList<int>& failureCounts, const QStringList& protocols);
     void applyShadow(QWidget* widget);
 };
 

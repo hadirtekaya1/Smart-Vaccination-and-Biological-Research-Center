@@ -11,7 +11,7 @@ LabConsumablesOptimizer::LabConsumablesOptimizer(QWidget *parent)
     populateTable();
     checkStocks();
 
-    connect(ui->autoOrderButton, &QPushButton::clicked, this, &LabConsumablesOptimizer::on_autoOrderButton_clicked);
+    //connect(ui->autoOrderButton, &QPushButton::clicked, this, &LabConsumablesOptimizer::on_autoOrderButton_clicked);
 }
 
 LabConsumablesOptimizer::~LabConsumablesOptimizer()
