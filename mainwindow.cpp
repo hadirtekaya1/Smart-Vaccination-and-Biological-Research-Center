@@ -59,8 +59,8 @@ MainWindow::MainWindow(QWidget *parent)
     ui->tableWidget->horizontalHeader()->setFixedHeight(40);
 
     // Initialize combo boxes
-    ui->comboBox->addItems({"Inactivated", "Live-attenuated", "mRNA", "Subunit"});
-    ui->comboBox_2->addItems({"Nour", "Mouadh", "Pfizer", "Moderna", "AstraZeneca"});
+    ui->comboBox->addItems({"Primary", "Booster"});
+    ui->comboBox_2->addItems({"Sanofi Pasteur", "Novavax", "GlaxoSmithKline", "Moderna", "AstraZeneca"});
     connect(ui->comboBox_4, QOverload<int>::of(&QComboBox::currentIndexChanged),
             this, &MainWindow::onSortComboBoxChanged);
 
