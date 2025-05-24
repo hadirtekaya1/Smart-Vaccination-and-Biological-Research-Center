@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Smart Vaccine Chatbot</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">
+     QWidget {
+         background-color: #e6f0fa;
+         font-family: "Segoe UI";
+         font-size: 12pt;
+     }
+
+     QPushButton#sendButton {
+         background-color: #6ac479;
+         color: white;
+         padding: 6px 12px;
+         border-radius: 10px;
+         font-weight: bold;
+     }
+
+     QPushButton#sendButton:hover {
+         background-color: #5bb869;
+     }
+
+     QPushButton#option1Button,
+     QPushButton#option2Button,
+     QPushButton#option3Button,
+     QPushButton#option4Button,
+     QPushButton#option5Button {
+         background-color: #193870;
+         color: white;
+         padding: 6px 12px;
+         border-radius: 10px;
+         font-weight: bold;
+     }
+
+     QPushButton#option1Button:hover,
+     QPushButton#option2Button:hover,
+     QPushButton#option3Button:hover,
+     QPushButton#option4Button:hover,
+     QPushButton#option5Button:hover {
+         background-color: #142d5d;
+     }
+
+     QLineEdit {
+         padding: 6px;
+         border: 1px solid #ccc;
+         border-radius: 6px;
+         background-color: white;
+     }
+
+     QTextEdit {
+         background-color: white;
+         border-radius: 6px;
+         padding: 6px;
+     }
+    </string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout">
+      <item>
+       <spacer name="horizontalSpacerLeft">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Expanding</enum>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="iconLabel">
+        <property name="minimumSize">
+         <size>
+          <width>64</width>
+          <height>64</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>64</width>
+          <height>64</height>
+         </size>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="resources.qrc">:/Downloads/chatbot.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacerRight">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Expanding</enum>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="chatDisplay">
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Hello, how can I help you ?</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLineEdit" name="userInput">
+        <property name="placeholderText">
+         <string>Type your question here...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="sendButton">
+        <property name="text">
+         <string>Send</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="optionsLayout">
+      <item>
+       <widget class="QPushButton" name="option1Button">
+        <property name="text">
+         <string>What are the side effects ?</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="option2Button">
+        <property name="text">
+         <string>Which vaccine is best ?</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="option3Button">
+        <property name="text">
+         <string>Can kids be vaccinated ?</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="option4Button">
+      <property name="text">
+       <string>Difference between mRNA and vector ?</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="option5Button">
+      <property name="text">
+       <string>How to book an appointment ?</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
