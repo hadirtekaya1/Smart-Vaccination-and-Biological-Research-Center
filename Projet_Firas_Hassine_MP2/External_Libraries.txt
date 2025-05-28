@@ -1,0 +1,46 @@
+External Libraries and Tools Used in the Project
+
+This report provides an overview of the external libraries and tools that were integrated into the project, beyond what is typically provided by Qt Creator and standard C++.
+
+1. QRencode (libqrencode):
+
+- Source: https://github.com/fukuchi/libqrencode
+- What it's for: We used this library to generate QR codes that represent patient data.
+- How it was added:
+  - We manually downloaded the source files (`.c` and `.h`) and included them directly in the Qt project.
+  - These files were compiled along with the rest of the project.
+- Why: It’s a simple and efficient way to produce QR codes directly from text data.
+
+2. OpenCV (Open Source Computer Vision Library):
+
+- Downloaded from: https://opencv.org/releases/ or the MinGW build at https://github.com/huihut/OpenCV-MinGW-Build
+- Version: 4.1.1 (MinGW build)
+- What it's for: Used to capture webcam frames and display the live camera feed.
+- How it was added:
+  - We added include and lib paths to the `.pro` file.
+  - We copied the necessary OpenCV DLLs (like `opencv_videoio_ffmpeg411_64.dll`) into the `debug` folder next to the app executable.
+- Note: You had both OpenCV and the prebuilt OpenCV-MinGW build — we used the latter in practice.
+
+3. ZXing-C++ (Zebra Crossing Barcode Scanner):
+
+- Source: https://github.com/nu-book/zxing-cpp
+- What it's for: This is the library we used to reliably detect QR codes from captured images.
+- Why switch from OpenCV: OpenCV's QR code detection was not consistent enough, especially with real-time webcam images.
+- Setup steps:
+  1. Downloaded ZXing-C++ from GitHub.
+  2. Installed CMake (https://cmake.org/download/).
+  3. Used the CMake GUI to configure the build with `MinGW Makefiles`, pointing it to the compilers in `C:/Qt/Tools/mingw1120_64/bin`.
+  4. Built the library with `mingw32-make`.
+  5. Copied the resulting `libZXing.dll` to the `debug` directory.
+  6. Linked against `libZXing.dll.a` from the build output by updating the `.pro` file.
+
+- How it was added to Qt:
+  - Added `INCLUDEPATH += C:/libraries/zxing-cpp-master/core/src`
+  - Added `LIBS += -LC:/libraries/zxing-build/core -lZXing`
+
+Final Notes:
+
+- All libraries were integrated using Qt Creator with MinGW 11.2.0 (from `C:/Qt/Tools/mingw1120_64`).
+- Paths in the `.pro` file were adjusted to use forward slashes to ensure compatibility.
+
+This setup enables robust QR generation and scanning functionality, combining the strengths of QRencode, OpenCV, and ZXing.
