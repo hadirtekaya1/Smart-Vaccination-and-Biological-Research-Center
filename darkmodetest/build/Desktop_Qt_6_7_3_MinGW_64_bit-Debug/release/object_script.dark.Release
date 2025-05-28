@@ -1,0 +1,12 @@
+release/connection.o
+release/historydialog.o
+release/main.o
+release/mainwindow.o
+release/statsdialog.o
+release/pdfexporter.o
+release/vaccine.o
+release/qrc_a.o
+release/moc_historydialog.o
+release/moc_mainwindow.o
+release/moc_statsdialog.o
+release/moc_pdfexporter.o
