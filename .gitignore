@@ -1,0 +1,9 @@
+# Qt build folders
+*/build-*/  
+*/debug/  
+*/release/  
+
+# Object and binary files
+*.o
+*.exe
+*.dll

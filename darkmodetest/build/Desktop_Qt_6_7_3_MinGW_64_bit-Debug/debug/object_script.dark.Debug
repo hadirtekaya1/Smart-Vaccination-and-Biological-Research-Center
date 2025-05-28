@@ -1,0 +1,12 @@
+debug/connection.o
+debug/historydialog.o
+debug/main.o
+debug/mainwindow.o
+debug/statsdialog.o
+debug/pdfexporter.o
+debug/vaccine.o
+debug/qrc_a.o
+debug/moc_historydialog.o
+debug/moc_mainwindow.o
+debug/moc_statsdialog.o
+debug/moc_pdfexporter.o
